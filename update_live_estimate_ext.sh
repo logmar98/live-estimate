@@ -4199,16 +4199,11 @@ if systemctl --user list-unit-files live-estimate.timer >/dev/null 2>&1; then
 fi
 
 echo
-echo "===================================================================="
-echo " 42 LIVE-ESTIMATE EXTENSION & XATTENDO FUSION DEPLOYED! "
-echo "===================================================================="
-echo "Extension Path: $EXT_DIR"
-echo "Extension ID  : $EXT_ID"
-echo "Native Host   : $BRAVE_NM_DIR/$HOST_NAME.json"
+echo "Add extension in Brave (first time):"
+echo "  1. Open brave://extensions"
+echo "  2. Enable 'Developer mode' (top-right)"
+echo "  3. Click 'Load unpacked' and select: $EXT_DIR"
 echo
-echo "To reload in Brave:"
-echo " 1. Navigate to: brave://extensions"
-echo " 2. Enable 'Developer mode' (top right toggle if not already on)"
-echo " 3. Click the reload icon (↻) on '42 Live-Estimate Counter'"
-echo " 4. Open the extension popup from your toolbar!"
-echo "===================================================================="
+echo "Update extension in Brave (already added):"
+echo "  1. Open brave://extensions"
+echo "  2. Click the reload icon (↻) on '42 Live-Estimate Counter'"
